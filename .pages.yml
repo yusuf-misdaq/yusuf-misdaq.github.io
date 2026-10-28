@@ -11,7 +11,7 @@ content:
   - name: ticker
     label: Ticker
     type: group
-    content:
+    items:
       - name: people
         label: People
         type: file
@@ -335,7 +335,7 @@ content:
   - name: homepage
     label: Homepage
     type: group
-    content:
+    items:
       - name: excerpts
         label: Excerpts of the day
         type: file

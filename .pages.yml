@@ -100,29 +100,189 @@ content:
   # ---------------- pages ----------------
   - name: works
     label: Selected works
-    type: file
-    path: content/works.json
-    format: json
+    type: collection
+    path: content/works
+    filename: "{fields.title}.md"
+    view:
+      primary: title
+      fields: [title, form, year]
+      sort: [title, year]
+      search: [title, details, line]
+      default:
+        sort: title
+        order: asc
     fields:
-      - name: items
-        label: Works
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{fields.title} ({fields.form}, {fields.year})"
-        fields:
-          - { name: title, label: Title, type: string, required: true }
-          - name: form
-            label: Form
-            type: select
-            options:
-              values: [music, film, novel, poetry, painting, sculpture, spaces]
-          - { name: year, label: Year, type: string }
-          - { name: details, label: "Details line, e.g. lp · 19 tracks · 2013", type: string }
-          - { name: line, label: One line about it, type: text }
-          - { name: cover, label: Cover image (music covers show on hover), type: image, options: { path: media/images } }
-          - { name: hidden, label: Hide from the site, type: boolean }
+      # --- the tile on the selected works page ---
+      - { name: title, label: Title, type: string, required: true }
+      - name: form
+        label: Form
+        type: select
+        options:
+          values: [music, film, novel, poetry, painting, sculpture, spaces]
+      - { name: year, label: Year, type: string }
+      - { name: details, label: "Details line, e.g. lp · 19 tracks · 2013", type: string }
+      - { name: line, label: One line about it (on the tile and at the top of its page), type: text }
+      - { name: cover, label: Cover image (top of its page; music covers also show on the tile's hover), type: image, options: { path: media/images } }
+      - { name: hidden, label: Hide this work from the site, type: boolean }
+      # --- its project page: a stack of blocks, in any order ---
+      - name: blocks
+        label: Project page
+        type: block
+        list: true
+        blockKey: type
+        blocks:
+          - name: text
+            label: Text
+            fields:
+              - { name: body, label: Writing, type: rich-text, options: { format: html, path: media/images } }
+              - { name: dropcap, label: Large first letter, type: boolean }
+          - name: poster
+            label: Poster (your words in the big poster type)
+            fields:
+              - { name: text, label: Words, type: text }
+              - name: colour
+                label: Colour
+                type: select
+                options: { values: [lapis, pink, gold, red, ink, cream] }
+              - name: size
+                label: Type size
+                type: select
+                options: { values: [huge, large, medium] }
+              - name: width
+                label: Width
+                type: select
+                options: { values: [wide, text, full] }
+              - { name: image, label: Photo behind the words (optional), type: image, options: { path: media/images } }
+              - { name: tight, label: Sit tight to the block above, type: boolean }
+          - name: image
+            label: Image
+            fields:
+              - { name: image, label: Image, type: image, options: { path: media/images } }
+              - name: size
+                label: Size
+                type: select
+                options: { values: [wide, text, full, band] }
+              - name: focus
+                label: "Keep this part when cropped (for band)"
+                type: select
+                options: { values: [center, top, bottom, left, right] }
+              - { name: caption, label: Caption, type: string }
+              - { name: alt, label: Description for screen readers, type: string }
+              - { name: tight, label: Sit tight to the block above, type: boolean }
+          - name: wrap
+            label: Image with text wrapped around it
+            fields:
+              - { name: image, label: Image, type: image, options: { path: media/images } }
+              - name: side
+                label: Image side
+                type: select
+                options: { values: [left, right] }
+              - { name: small, label: Smaller image, type: boolean }
+              - { name: caption, label: Caption, type: string }
+              - { name: body, label: Writing, type: rich-text, options: { format: html, path: media/images } }
+          - name: split
+            label: Split (two halves side by side)
+            fields:
+              - name: style
+                label: Panels
+                type: select
+                options: { values: [plain, lapis] }
+              - name: left
+                label: Left half
+                type: object
+                fields:
+                  - { name: image, label: Image, type: image, options: { path: media/images } }
+                  - { name: title, label: Title, type: string }
+                  - { name: line, label: Line, type: string }
+                  - { name: link, label: "Link (a page like work.html?w=narayan, or a web address)", type: string }
+                  - { name: linkText, label: "Link words, e.g. listen", type: string }
+              - name: right
+                label: Right half
+                type: object
+                fields:
+                  - { name: image, label: Image, type: image, options: { path: media/images } }
+                  - { name: title, label: Title, type: string }
+                  - { name: line, label: Line, type: string }
+                  - { name: link, label: Link, type: string }
+                  - { name: linkText, label: Link words, type: string }
+          - name: quote
+            label: Quote
+            fields:
+              - { name: text, label: Quote, type: text }
+              - { name: by, label: Who said it (optional), type: string }
+              - name: style
+                label: Style
+                type: select
+                options: { values: [quiet, poster] }
+          - name: poem
+            label: Poem (keeps your line breaks)
+            fields:
+              - { name: title, label: Title (optional), type: string }
+              - { name: text, label: Poem, type: text }
+          - name: gallery
+            label: Gallery
+            fields:
+              - { name: images, label: Images, type: image, options: { path: media/images, multiple: { max: 30 } } }
+              - name: style
+                label: Style
+                type: select
+                options: { values: [strip, grid] }
+              - { name: caption, label: Caption, type: string }
+          - name: video
+            label: Video (YouTube or Vimeo)
+            fields:
+              - { name: url, label: YouTube or Vimeo link, type: string }
+              - name: size
+                label: Size
+                type: select
+                options: { values: [wide, text, full] }
+              - { name: caption, label: Caption, type: string }
+              - { name: poster, label: Still image before it plays (optional), type: image, options: { path: media/images } }
+          - name: clip
+            label: Short silent clip (loops like a moving photo)
+            fields:
+              - { name: file, label: "Video file (mp4, under 10 MB)", type: file, options: { path: media/video, extensions: [mp4, webm] } }
+              - name: size
+                label: Size
+                type: select
+                options: { values: [wide, text, full] }
+              - { name: caption, label: Caption, type: string }
+          - name: audio
+            label: Audio track
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: file, label: "Audio file (mp3)", type: file, options: { path: media/audio, extensions: [mp3, m4a, ogg] } }
+          - name: pinned
+            label: Pinned image beside scrolling text
+            fields:
+              - { name: image, label: Image, type: image, options: { path: media/images } }
+              - name: side
+                label: Image side
+                type: select
+                options: { values: [left, right] }
+              - { name: caption, label: Caption, type: string }
+              - { name: body, label: Writing, type: rich-text, options: { format: html, path: media/images } }
+          - name: links
+            label: Listen / buy buttons
+            fields:
+              - name: items
+                label: Buttons
+                type: object
+                list: true
+                fields:
+                  - { name: label, label: "Words, e.g. bandcamp", type: string }
+                  - { name: url, label: Web address, type: string }
+          - name: divider
+            label: Divider
+            fields:
+              - name: style
+                label: Style
+                type: select
+                options: { values: [glyph, band] }
+          - name: credits
+            label: Credits
+            fields:
+              - { name: text, label: "Credits, one per line", type: text }
 
   - name: opportunities
     label: Opportunities

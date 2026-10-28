@@ -1,0 +1,238 @@
+# Pages CMS: the editor for yusufmisdaq.com (open https://app.pagescms.org and pick this repository).
+# Each entry below becomes a section in the editor's left-hand menu.
+
+media:
+  input: media
+  output: media
+  rename: safe
+
+content:
+  # ---------------- the ticker ----------------
+  - name: ticker
+    label: Ticker
+    type: group
+    content:
+      - name: people
+        label: People
+        type: file
+        path: content/people.json
+        format: json
+        fields:
+          - name: items
+            label: People
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.name}"
+            fields:
+              - { name: name, label: Name, type: string, required: true }
+              - { name: line, label: Your words about them, type: text }
+              - { name: born, label: "Born (yyyy-mm-dd) — for a group: first album release", type: string }
+              - { name: passed, label: "Passed (yyyy-mm-dd) — for a group: last album release", type: string }
+              - { name: group, label: "This is a group (wording becomes 'first / last album released on')", type: boolean }
+              - { name: bornNote, label: "Note after the birth date, e.g. (traditional birth date)", type: string }
+              - { name: passedNote, label: "Note after the passing date, e.g. (actual date unknown)", type: string }
+              - { name: hidden, label: Hide from the ticker, type: boolean }
+
+      - name: releases
+        label: Releases
+        type: file
+        path: content/releases.json
+        format: json
+        fields:
+          - name: items
+            label: Releases
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.artist} — {fields.title}"
+            fields:
+              - { name: artist, label: "Artist (for your own albums: Yusuf)", type: string, required: true }
+              - { name: title, label: Title, type: string, required: true }
+              - { name: released, label: "Release date (yyyy-mm-dd)", type: string }
+              - { name: format, label: "Format, e.g. single, 7\" single (leave empty for an album)", type: string }
+              - { name: mine, label: This is my own release, type: boolean }
+              - { name: recorded, label: "Use 'recorded on' instead of 'released on'", type: boolean }
+              - { name: note, label: "Note after the date, e.g. (exact day unknown)", type: string }
+              - { name: hidden, label: Hide from the ticker, type: boolean }
+
+      - name: moments
+        label: Diary moments
+        type: file
+        path: content/moments.json
+        format: json
+        fields:
+          - name: items
+            label: Moments
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.date} — {fields.text}"
+            fields:
+              - { name: date, label: Date it happened, type: date, default: "", options: { format: yyyy-MM-dd } }
+              - { name: text, label: "What happened, in your words (e.g. Yusuf played basketball on the beach in Brighton with Jon and Bud)", type: text }
+              - { name: hidden, label: Hide from the ticker, type: boolean }
+
+      - name: news
+        label: News
+        type: file
+        path: content/news.json
+        format: json
+        fields:
+          - name: items
+            label: News
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.label}: {fields.text}"
+            fields:
+              - { name: label, label: "Small label, e.g. new, listen, out now", type: string, default: news }
+              - { name: text, label: Text, type: string, required: true }
+              - { name: link, label: "Link (optional) — a page like works.html or a full web address", type: string }
+              - { name: start, label: Show from (optional), type: date, default: "", options: { format: yyyy-MM-dd } }
+              - { name: end, label: Show until (optional), type: date, default: "", options: { format: yyyy-MM-dd } }
+              - { name: hidden, label: Hide, type: boolean }
+
+  # ---------------- pages ----------------
+  - name: works
+    label: Selected works
+    type: file
+    path: content/works.json
+    format: json
+    fields:
+      - name: items
+        label: Works
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.title} ({fields.form}, {fields.year})"
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - name: form
+            label: Form
+            type: select
+            options:
+              values: [music, film, novel, poetry, painting, sculpture, spaces]
+          - { name: year, label: Year, type: string }
+          - { name: details, label: "Details line, e.g. lp · 19 tracks · 2013", type: string }
+          - { name: line, label: One line about it, type: text }
+          - { name: cover, label: Cover image (music covers show on hover), type: image, options: { path: media/images } }
+          - { name: hidden, label: Hide from the site, type: boolean }
+
+  - name: opportunities
+    label: Opportunities
+    type: file
+    path: content/opportunities.json
+    format: json
+    fields:
+      - name: items
+        label: Opportunities
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.title}"
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: where, label: "Where / how, e.g. in person · los angeles", type: string }
+          - { name: description, label: Description, type: text }
+          - { name: payment, label: Payment, type: string }
+          - { name: open, label: Open (untick to close it and take it off the site), type: boolean, default: true }
+          - { name: showInTicker, label: Also show in the ticker, type: boolean }
+          - { name: tickerText, label: "Short ticker text (optional, otherwise the title is used)", type: string }
+
+  - name: inspirations
+    label: Inspirations wall
+    type: file
+    path: content/inspirations.json
+    format: json
+    fields:
+      - name: items
+        label: Pieces
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.name}"
+        fields:
+          - { name: name, label: Name, type: string, required: true }
+          - { name: image, label: "Image (a cut-out PNG or WebP looks best)", type: image, options: { path: media/images } }
+          - { name: description, label: "Small caption, e.g. novelist · 1828–1910", type: string }
+          - { name: line, label: A line in your words, type: text }
+          - name: size
+            label: Size on the wall
+            type: select
+            options:
+              values: [small, medium, large]
+          - { name: hidden, label: Hide from the wall, type: boolean }
+
+  # ---------------- homepage ----------------
+  - name: homepage
+    label: Homepage
+    type: group
+    content:
+      - name: excerpts
+        label: Excerpts of the day
+        type: file
+        path: content/excerpts.json
+        format: json
+        fields:
+          - name: items
+            label: Excerpts
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.title}: {fields.text}"
+            fields:
+              - { name: text, label: Excerpt, type: text, required: true }
+              - { name: title, label: Poem title, type: string }
+              - { name: location, label: "Date and place, e.g. September, 2009. South Park, San Diego.", type: string }
+              - { name: poemId, label: Poem id (from the poetry archive; can stay empty), type: string }
+
+      - name: songs
+        label: Songs in the player
+        type: file
+        path: content/songs.json
+        format: json
+        fields:
+          - name: items
+            label: Songs
+            type: object
+            list:
+              collapsible:
+                collapsed: false
+                summary: "{fields.title}"
+            fields:
+              - { name: title, label: "Title as shown in the player, e.g. song · album", type: string }
+              - { name: file, label: "Audio file (mp3, about 3–6 MB)", type: file, options: { path: media/audio, extensions: [mp3, m4a, ogg] } }
+
+  - name: settings
+    label: Site settings
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: links
+        label: Footer links
+        type: object
+        fields:
+          - { name: bandcamp, label: Bandcamp address, type: string }
+          - { name: instagram, label: Instagram address, type: string }
+          - { name: contact, label: "Contact link (a page or mailto: address)", type: string }
+      - name: menu
+        label: Menu boxes and their rotating names
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.label}"
+        fields:
+          - { name: label, label: "Section (small label under the box)", type: string }
+          - { name: link, label: "Page it opens, e.g. works.html (empty until the page exists)", type: string }
+          - { name: names, label: Rotating poetic names, type: string, list: true }

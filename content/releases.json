@@ -4,10 +4,8 @@
       "artist": "Divine Styler",
       "title": "Spiral Walls Containing Autumns of Light",
       "released": "1992-03-27",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
@@ -17,24 +15,20 @@
       "format": "single",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "DJ Shadow",
       "title": "Endtroducing.....",
       "released": "1996-09-16",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Eric Burdon & The Animals",
       "title": "The Twain Shall Meet",
       "released": "1967-12-01",
-      "format": "",
       "mine": false,
       "recorded": true,
       "note": "(exact day unknown)",
@@ -44,50 +38,40 @@
       "artist": "Prodigy",
       "title": "The Hegelian Dialectic (The Book of Revelation)",
       "released": "2017-01-20",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Mos Def",
       "title": "The New Danger",
       "released": "2004-10-12",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "The Helio Sequence",
       "title": "Keep Your Eyes Ahead",
       "released": "2008-01-29",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Love",
       "title": "Forever Changes",
       "released": "1967-11-01",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "George Harrison",
       "title": "Living in the Material World",
       "released": "1973-05-30",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
@@ -97,107 +81,95 @@
       "format": "7\" single",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "John Coltrane",
       "title": "A Love Supreme",
       "released": "1964-12-09",
-      "format": "",
       "mine": false,
       "recorded": true,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Miles Davis",
       "title": "In a Silent Way",
       "released": "1969-07-30",
-      "format": "",
       "mine": false,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "From a Western Box",
       "released": "2004-03-05",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "Flowers & Trees",
       "released": "2005-05-17",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "Maghreb, Isha & Space",
       "released": "2010-03-23",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "If You Ask Me, Yes",
       "released": "2013-09-14",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "Misted Almond Legacy",
       "released": "2017-11-24",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "Dust of Time",
       "released": "2019-12-27",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "SHEDARK / MIROSA",
       "released": "2020-09-11",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
       "hidden": false
     },
     {
       "artist": "Yusuf",
       "title": "Ziyara (زيارة)",
       "released": "2022-05-20",
-      "format": "",
       "mine": true,
       "recorded": false,
-      "note": "",
+      "hidden": false
+    },
+    {
+      "artist": "Cocteau Twins",
+      "title": "Pink Opaque",
+      "released": "1986-01-13",
+      "mine": false,
+      "recorded": false,
+      "note": "imagine listening to this as the new year dawned upon you in '86",
       "hidden": false
     }
   ]

@@ -4,10 +4,7 @@
       "name": "Rakim",
       "line": "pioneer in Hip-Hop",
       "born": "1968-01-28",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -16,18 +13,14 @@
       "born": "1926-05-26",
       "passed": "1991-09-28",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Andrei Tarkovsky",
-      "line": "filmmaker and luminous seeker",
+      "line": "filmmaker and luminous seeker, \"Modern mass culture, aimed at the 'consumer', the civilisation of prosthetics, is crippling people's souls, setting up barriers between man and the crucial questions of his existence, his consciousness of himself as a spiritual being.\" - rest in peace.  ",
       "born": "1932-04-04",
       "passed": "1986-12-29",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -36,18 +29,13 @@
       "born": "1958-08-29",
       "passed": "2009-06-25",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Mike Tyson",
       "line": "radical authentic human, God bless you",
       "born": "1966-06-30",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -56,8 +44,6 @@
       "born": "1917-02-25",
       "passed": "1993-11-22",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -66,8 +52,6 @@
       "born": "1865-06-13",
       "passed": "1939-01-28",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -76,8 +60,6 @@
       "born": "1933-02-21",
       "passed": "2003-04-21",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -86,8 +68,6 @@
       "born": "1910-03-23",
       "passed": "1998-09-06",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -96,8 +76,6 @@
       "born": "1945-02-06",
       "passed": "1981-05-11",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -106,8 +84,6 @@
       "born": "1828-09-09",
       "passed": "1910-11-20",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -116,8 +92,6 @@
       "born": "1914-05-22",
       "passed": "1993-05-30",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -126,8 +100,6 @@
       "born": "1948-10-13",
       "passed": "1997-08-16",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -136,8 +108,6 @@
       "born": "1821-11-11",
       "passed": "1881-02-09",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -146,8 +116,6 @@
       "born": "1936-11-18",
       "passed": "1995-10-19",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -156,8 +124,6 @@
       "born": "1859-06-21",
       "passed": "1937-05-25",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -166,18 +132,13 @@
       "born": "1946-09-05",
       "passed": "1991-11-24",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Bob Dylan",
       "line": "the giant soul in a whisper quiet form, keenest observer, believer, artist; did not live his life just for fame, sought God with sincerity.",
       "born": "1941-05-24",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -186,28 +147,20 @@
       "born": "1874-01-25",
       "passed": "1965-12-16",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Joni Mitchell",
       "line": "one of my biggest early inspirations, giant artist, gave herself to the gift.",
       "born": "1943-11-07",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Eric Burdon",
       "line": "few have delved into the greatness of this man's spirit, Newcastle to the entire world, God bless you Eric, rock IN eternally.",
       "born": "1941-05-11",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -216,8 +169,6 @@
       "born": "1943-02-25",
       "passed": "2001-11-29",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -226,8 +177,6 @@
       "born": "1877-07-02",
       "passed": "1962-08-09",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -236,8 +185,6 @@
       "born": "1946-01-20",
       "passed": "2025-01-16",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -246,8 +193,6 @@
       "born": "1899-07-21",
       "passed": "1961-07-02",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -256,8 +201,6 @@
       "born": "1795-10-31",
       "passed": "1821-02-23",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -266,8 +209,6 @@
       "born": "1883-09-17",
       "passed": "1963-03-04",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -276,8 +217,6 @@
       "born": "1940-07-30",
       "passed": "2016-04-18",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -286,8 +225,6 @@
       "born": "1897-08-20",
       "passed": "1970-03-15",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -296,8 +233,6 @@
       "born": "1922-11-11",
       "passed": "2007-04-11",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -306,8 +241,6 @@
       "born": "1926-09-23",
       "passed": "1967-07-17",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -316,8 +249,6 @@
       "born": "1940-10-13",
       "passed": "2022-09-24",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -326,8 +257,6 @@
       "born": "1958-06-07",
       "passed": "2016-04-21",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -336,38 +265,27 @@
       "born": "1848-06-07",
       "passed": "1903-05-08",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Mos Def",
       "line": "Hip-Hop icon, lent his support to Astralab when we needed it - I came of age with his first few albums, a great artist, you always have my heart, big brother, salaam alaikum wrb.",
       "born": "1973-12-11",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Ishmael Butler",
       "line": "legendary statue of Poetry, Music, Hip-Hop. If there is a great future still ahead, then more artists will be studying and discovering Ish in it.",
       "born": "1969-07-03",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Liam Gallagher",
       "line": "rock on you mad bastard I love you.",
       "born": "1972-09-21",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -376,8 +294,6 @@
       "born": "1943-12-08",
       "passed": "1971-07-03",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -386,8 +302,6 @@
       "born": "1935-10-12",
       "passed": "2007-09-06",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -396,8 +310,6 @@
       "born": "1830-12-10",
       "passed": "1886-05-15",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -406,8 +318,6 @@
       "born": "1968-11-15",
       "passed": "2004-11-13",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -416,8 +326,6 @@
       "born": "1869-12-31",
       "passed": "1954-11-03",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -426,8 +334,6 @@
       "born": "1952-01-17",
       "passed": "2023-03-28",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -436,28 +342,20 @@
       "born": "1961-06-17",
       "passed": "1999-01-14",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "RZA",
       "line": "keep traveling deeper, we love you",
       "born": "1969-07-05",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Kate Bush",
       "line": "vivid spirit in a cyclone of love, thank you for all you have given us.",
       "born": "1958-07-30",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -466,18 +364,13 @@
       "born": "1881-10-25",
       "passed": "1973-04-08",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Donovan",
       "line": "happy man, we love you",
       "born": "1946-05-10",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -486,18 +379,13 @@
       "born": "1813-05-05",
       "passed": "1855-11-11",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Julia Kristeva",
       "line": "a great philosopher I inherited from my mother's love of her.",
       "born": "1941-06-24",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -506,37 +394,26 @@
       "born": "1914-03-31",
       "passed": "1998-04-19",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Cody ChesnuTT",
       "line": "great artist with integrity, you are revered for what you do and how you do it, stay on and in, brother.",
-      "born": "",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Melle Mel",
       "line": "early Hip-Hop pioneer, powerhouse and one of the first gifted storytellers of Hip-Hop.",
       "born": "1961-05-15",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Socrates",
       "line": "touched by the Divine, everyone really should try to read his Apology, Crito, Phaedo once in their life.",
-      "born": "",
       "passed": "-399-06-04",
       "group": false,
-      "bornNote": "",
       "passedNote": "(actual date unknown)",
       "hidden": false
     },
@@ -546,8 +423,6 @@
       "born": "1939-04-02",
       "passed": "1984-04-01",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
@@ -556,398 +431,270 @@
       "born": "1924-04-03",
       "passed": "2004-07-01",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "James Brown",
-      "line": "",
       "born": "1933-05-03",
       "passed": "2006-12-25",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Suzi Gablik",
-      "line": "",
       "born": "1934-09-26",
       "passed": "2022-05-07",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Aldous Huxley",
-      "line": "",
       "born": "1894-07-26",
       "passed": "1963-11-22",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Harold Pinter",
-      "line": "",
       "born": "1930-10-10",
       "passed": "2008-12-24",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Tennessee Williams",
-      "line": "",
       "born": "1911-03-26",
       "passed": "1983-02-25",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "The Beatles",
-      "line": "",
       "born": "1963-03-22",
       "passed": "1970-05-08",
       "group": true,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Rabindranath Tagore",
-      "line": "",
       "born": "1861-05-07",
       "passed": "1941-08-07",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "William Shakespeare",
-      "line": "",
       "born": "1564-04-23",
       "passed": "1616-04-23",
       "group": false,
       "bornNote": "(traditional birth date)",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "William Blake",
-      "line": "",
       "born": "1757-11-28",
       "passed": "1827-08-12",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Terrence Malick",
-      "line": "",
       "born": "1943-11-30",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Brian Eno",
-      "line": "",
       "born": "1948-05-15",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Albert Camus",
-      "line": "",
       "born": "1913-11-07",
       "passed": "1960-01-04",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Wu-Tang Clan",
-      "line": "",
       "born": "1993-11-09",
       "passed": "2015-11-25",
       "group": true,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "David Axelrod",
-      "line": "",
       "born": "1931-04-17",
       "passed": "2017-02-05",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "DJ Shadow",
-      "line": "",
       "born": "1972-06-29",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Bill Laswell",
-      "line": "",
       "born": "1955-02-12",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Elizabeth Fraser",
-      "line": "",
       "born": "1963-08-29",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Cocteau Twins",
-      "line": "",
       "born": "1982-07-10",
       "passed": "1996-04-15",
       "group": true,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Harold Budd",
-      "line": "",
       "born": "1936-05-24",
       "passed": "2020-12-08",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Glenn Gould",
-      "line": "",
       "born": "1932-09-25",
       "passed": "1982-10-04",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Sensational",
-      "line": "",
       "born": "1974-10-18",
       "passed": "2026-08-11",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Syd Barrett",
-      "line": "",
       "born": "1946-01-06",
       "passed": "2006-07-07",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Ben Okri",
-      "line": "",
       "born": "1959-03-15",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Boards of Canada",
-      "line": "",
       "born": "1998-04-20",
       "passed": "2026-05-29",
       "group": true,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "2Pac",
-      "line": "",
       "born": "1971-06-16",
       "passed": "1996-09-13",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "The Notorious B.I.G.",
-      "line": "",
       "born": "1972-05-21",
       "passed": "1997-03-09",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "OutKast",
-      "line": "",
       "born": "1994-04-26",
       "passed": "2006-08-22",
       "group": true,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Takeshi Kitano",
-      "line": "",
       "born": "1947-01-18",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Silvio Rodríguez",
-      "line": "",
       "born": "1946-11-29",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Radiohead",
-      "line": "",
       "born": "1993-02-22",
       "passed": "2016-05-08",
       "group": true,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Jon Pertwee",
-      "line": "",
       "born": "1919-07-07",
       "passed": "1996-05-20",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Tom Baker",
-      "line": "",
       "born": "1934-01-20",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "William Shatner",
-      "line": "",
       "born": "1931-03-22",
-      "passed": "",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Leonard Nimoy",
-      "line": "",
       "born": "1931-03-26",
       "passed": "2015-02-27",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Charlie Chaplin",
-      "line": "",
       "born": "1889-04-16",
       "passed": "1977-12-25",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Groucho Marx",
-      "line": "",
       "born": "1890-10-02",
       "passed": "1977-08-19",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Chico Marx",
-      "line": "",
       "born": "1887-03-22",
       "passed": "1961-10-11",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Harpo Marx",
-      "line": "",
       "born": "1888-11-23",
       "passed": "1964-09-28",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     },
     {
       "name": "Stanley Kubrick",
-      "line": "",
       "born": "1928-07-26",
       "passed": "1999-03-07",
       "group": false,
-      "bornNote": "",
-      "passedNote": "",
       "hidden": false
     }
   ]

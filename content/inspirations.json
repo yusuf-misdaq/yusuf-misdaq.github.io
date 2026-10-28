@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "name": "leo tolstoy",
+      "image": "media/images/tolstoy.webp",
+      "description": "novelist · 1828–1910",
+      "line": "",
+      "size": "medium",
+      "hidden": false
+    },
+    {
+      "name": "hermann hesse",
+      "image": "media/images/hesse.webp",
+      "description": "novelist & poet · 1877–1962",
+      "line": "",
+      "size": "medium",
+      "hidden": false
+    },
+    {
+      "name": "nusrat fateh ali khan",
+      "image": "media/images/nusrat.webp",
+      "description": "qawwali · 1948–1997",
+      "line": "",
+      "size": "large",
+      "hidden": false
+    },
+    {
+      "name": "ishmael butler",
+      "image": "media/images/ishmael-butler.webp",
+      "description": "musician · digable planets, shabazz palaces",
+      "line": "",
+      "size": "medium",
+      "hidden": false
+    }
+  ]
+}

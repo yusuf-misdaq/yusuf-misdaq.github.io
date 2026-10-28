@@ -1,0 +1,954 @@
+{
+  "items": [
+    {
+      "name": "Rakim",
+      "line": "pioneer in Hip-Hop",
+      "born": "1968-01-28",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Miles Davis",
+      "line": "dawntreader in experimental sound and radical authenticity",
+      "born": "1926-05-26",
+      "passed": "1991-09-28",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Andrei Tarkovsky",
+      "line": "filmmaker and luminous seeker",
+      "born": "1932-04-04",
+      "passed": "1986-12-29",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Michael Jackson",
+      "line": "we love you and we haven't forgotten you",
+      "born": "1958-08-29",
+      "passed": "2009-06-25",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Mike Tyson",
+      "line": "radical authentic human, God bless you",
+      "born": "1966-06-30",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Anthony Burgess",
+      "line": "genius English novelist who travelled the world and wrote in a style that is literally incomparable and the epitome of art",
+      "born": "1917-02-25",
+      "passed": "1993-11-22",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "W. B. Yeats",
+      "line": "Irish poet and seeker, a firework of a human being who existed and whose words still resonate today",
+      "born": "1865-06-13",
+      "passed": "1939-01-28",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Nina Simone",
+      "line": "never-endingly and supra-sentimentally, always...",
+      "born": "1933-02-21",
+      "passed": "2003-04-21",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Akira Kurosawa",
+      "line": "one of the greatest filmmakers and most clear-minded, clear-seeing artists there ever was, you are missed. Read his half-finished autobiography if you can.",
+      "born": "1910-03-23",
+      "passed": "1998-09-06",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Bob Marley",
+      "line": "the one whose beautiful voice/spirit still dance with us in the world today, represented a God-first mentality and lived an authentic life. Read his wife's book about their early life together, it's beautiful.",
+      "born": "1945-02-06",
+      "passed": "1981-05-11",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Leo Tolstoy",
+      "line": "giant of Russian literature, progressive believer and passionate advocate for the human connection with God. Afghans/Muslims should definitely read his last great novel Hadji Murat.",
+      "born": "1828-09-09",
+      "passed": "1910-11-20",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Sun Ra",
+      "line": "the world needed and needs reminders, some people give their entire life to reminding humanity, we love you.",
+      "born": "1914-05-22",
+      "passed": "1993-05-30",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Nusrat Fateh Ali Khan",
+      "line": "luminary, seeker, Qawwali master and Sufi, there can be only one Nusrat, we love you and miss you.",
+      "born": "1948-10-13",
+      "passed": "1997-08-16",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Fyodor Dostoyevsky",
+      "line": "a great of Russian literature, proof that sometimes God gives certain people amazing lives and gives them an equal gift for expression to share with the world, touched and forever loved.",
+      "born": "1821-11-11",
+      "passed": "1881-02-09",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Don Cherry",
+      "line": "jazz pioneer, seeker and traveler, thank you.",
+      "born": "1936-11-18",
+      "passed": "1995-10-19",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Henry Ossawa Tanner",
+      "line": "gifted artist, painter and believer, his works remain (or even increase) modern despite their age, African American pioneer artist.",
+      "born": "1859-06-21",
+      "passed": "1937-05-25",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Freddie Mercury",
+      "line": "a great artist who was a huge part of my early life and who my dad once sat next to on the London to Brighton when I was a kid. Every true artist teaches, Freddie was such an artist, and as Tarkovsky once said, 'even the Artist's mistakes are interesting.'",
+      "born": "1946-09-05",
+      "passed": "1991-11-24",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Bob Dylan",
+      "line": "the giant soul in a whisper quiet form, keenest observer, believer, artist; did not live his life just for fame, sought God with sincerity.",
+      "born": "1941-05-24",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "W. Somerset Maugham",
+      "line": "maybe my favourite novelist, a clear-eyed man whose expression and clarity of thought and observation will never be matched.",
+      "born": "1874-01-25",
+      "passed": "1965-12-16",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Joni Mitchell",
+      "line": "one of my biggest early inspirations, giant artist, gave herself to the gift.",
+      "born": "1943-11-07",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Eric Burdon",
+      "line": "few have delved into the greatness of this man's spirit, Newcastle to the entire world, God bless you Eric, rock IN eternally.",
+      "born": "1941-05-11",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "George Harrison",
+      "line": "greatest is the quietest. Dear One, we love you George, may you travel long, long, long, may we all be together again in the Cosmic Empire.",
+      "born": "1943-02-25",
+      "passed": "2001-11-29",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Hermann Hesse",
+      "line": "read his poems not just his novels, God bless you sir.",
+      "born": "1877-07-02",
+      "passed": "1962-08-09",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "David Lynch",
+      "line": "we miss you more, you are here, we see you often.",
+      "born": "1946-01-20",
+      "passed": "2025-01-16",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Ernest Hemingway",
+      "line": "giant of American literature for good reason, works still read as modern, anti-war and rightly guided, may God have mercy on your soul.",
+      "born": "1899-07-21",
+      "passed": "1961-07-02",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "John Keats",
+      "line": "we studied you in school and I have never forgotten you, in England I saw you often, you are always somewhere around.",
+      "born": "1795-10-31",
+      "passed": "1821-02-23",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "William Carlos Williams",
+      "line": "one of my favourite poets, a full-time doctor as well as a great artist, whose works still bring with them the fresh breeze of the East Coast to me every time, try reading Sour Grapes.",
+      "born": "1883-09-17",
+      "passed": "1963-03-04",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Daniel Abdal-Hayy Moore",
+      "line": "a friend in the art / spirit path, the man who gave me my first ever public poetry reading spotlight at RADA in London; Daniel was one of the last great beat poets and the most enduring spiritually, rest in peace, sweet soul.",
+      "born": "1940-07-30",
+      "passed": "2016-04-18",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Tarjei Vesaas",
+      "line": "one of my favourite novelists, authentic, found untold greatness in the smallest specks of this life.",
+      "born": "1897-08-20",
+      "passed": "1970-03-15",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Kurt Vonnegut",
+      "line": "great novelist and inspiration, survivor of war who knew its folly, a great connector for writers, a writer's writer.",
+      "born": "1922-11-11",
+      "passed": "2007-04-11",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "John Coltrane",
+      "line": "whirling spirit never lost calm traveler who stumbled upon the perfect moment and found the love supreme.",
+      "born": "1926-09-23",
+      "passed": "1967-07-17",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Pharoah Sanders",
+      "line": "great musician and huge influence, he never stopped, his entire life was his art. Rest in peace, uncle.",
+      "born": "1940-10-13",
+      "passed": "2022-09-24",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Prince",
+      "line": "my connection to you remains quivering and raw and I love you.",
+      "born": "1958-06-07",
+      "passed": "2016-04-21",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Paul Gauguin",
+      "line": "great artist and painter and seeker, a huge influence in my 20s, a brave man who gave his all.",
+      "born": "1848-06-07",
+      "passed": "1903-05-08",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Mos Def",
+      "line": "Hip-Hop icon, lent his support to Astralab when we needed it - I came of age with his first few albums, a great artist, you always have my heart, big brother, salaam alaikum wrb.",
+      "born": "1973-12-11",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Ishmael Butler",
+      "line": "legendary statue of Poetry, Music, Hip-Hop. If there is a great future still ahead, then more artists will be studying and discovering Ish in it.",
+      "born": "1969-07-03",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Liam Gallagher",
+      "line": "rock on you mad bastard I love you.",
+      "born": "1972-09-21",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Jim Morrison",
+      "line": "I made a promise to you and I am doing my best to keep it.",
+      "born": "1943-12-08",
+      "passed": "1971-07-03",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Luciano Pavarotti",
+      "line": "I sang his songs in bed as a child, I still sing them, it is obvious from his voice that he loved life.",
+      "born": "1935-10-12",
+      "passed": "2007-09-06",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Emily Dickinson",
+      "line": "great poet of New England who was a huge early inspiration, brave soul whose poetry is as fresh today as ever.",
+      "born": "1830-12-10",
+      "passed": "1886-05-15",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Russell Jones aka ODB",
+      "line": "we miss you and your free spirit.",
+      "born": "1968-11-15",
+      "passed": "2004-11-13",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Henri Matisse",
+      "line": "great painter and huge influence, an artist who was as calm and quiet as he was great and gifted.",
+      "born": "1869-12-31",
+      "passed": "1954-11-03",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Ryuichi Sakamoto",
+      "line": "iconic Japanese musician and artist, huge early influence, thank you for what you gave us.",
+      "born": "1952-01-17",
+      "passed": "2023-03-28",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Muslimgauze",
+      "line": "pioneering political artist who I was deeply into in the 90s and whose work endures to this day. You are remembered.",
+      "born": "1961-06-17",
+      "passed": "1999-01-14",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "RZA",
+      "line": "keep traveling deeper, we love you",
+      "born": "1969-07-05",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Kate Bush",
+      "line": "vivid spirit in a cyclone of love, thank you for all you have given us.",
+      "born": "1958-07-30",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Pablo Picasso",
+      "line": "great artist, powerful artist, inspiration.",
+      "born": "1881-10-25",
+      "passed": "1973-04-08",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Donovan",
+      "line": "happy man, we love you",
+      "born": "1946-05-10",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Søren Kierkegaard",
+      "line": "great philosopher with a unique / sharp mind whose writings are interesting thought experiments to exercise the brain.",
+      "born": "1813-05-05",
+      "passed": "1855-11-11",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Julia Kristeva",
+      "line": "a great philosopher I inherited from my mother's love of her.",
+      "born": "1941-06-24",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Octavio Paz",
+      "line": "giant of Mexican literature, poetry and prose, one of my biggest influences and someone I love in a way I can never understand.",
+      "born": "1914-03-31",
+      "passed": "1998-04-19",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Cody ChesnuTT",
+      "line": "great artist with integrity, you are revered for what you do and how you do it, stay on and in, brother.",
+      "born": "",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Melle Mel",
+      "line": "early Hip-Hop pioneer, powerhouse and one of the first gifted storytellers of Hip-Hop.",
+      "born": "1961-05-15",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Socrates",
+      "line": "touched by the Divine, everyone really should try to read his Apology, Crito, Phaedo once in their life.",
+      "born": "",
+      "passed": "-399-06-04",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "(actual date unknown)",
+      "hidden": false
+    },
+    {
+      "name": "Marvin Gaye",
+      "line": "man you were everything to me, thank you",
+      "born": "1939-04-02",
+      "passed": "1984-04-01",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Marlon Brando",
+      "line": "one of the very few well-known actors who had genuine artistic integrity and who artists today can learn from.",
+      "born": "1924-04-03",
+      "passed": "2004-07-01",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "James Brown",
+      "line": "",
+      "born": "1933-05-03",
+      "passed": "2006-12-25",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Suzi Gablik",
+      "line": "",
+      "born": "1934-09-26",
+      "passed": "2022-05-07",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Aldous Huxley",
+      "line": "",
+      "born": "1894-07-26",
+      "passed": "1963-11-22",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Harold Pinter",
+      "line": "",
+      "born": "1930-10-10",
+      "passed": "2008-12-24",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Tennessee Williams",
+      "line": "",
+      "born": "1911-03-26",
+      "passed": "1983-02-25",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "The Beatles",
+      "line": "",
+      "born": "1963-03-22",
+      "passed": "1970-05-08",
+      "group": true,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Rabindranath Tagore",
+      "line": "",
+      "born": "1861-05-07",
+      "passed": "1941-08-07",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "William Shakespeare",
+      "line": "",
+      "born": "1564-04-23",
+      "passed": "1616-04-23",
+      "group": false,
+      "bornNote": "(traditional birth date)",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "William Blake",
+      "line": "",
+      "born": "1757-11-28",
+      "passed": "1827-08-12",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Terrence Malick",
+      "line": "",
+      "born": "1943-11-30",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Brian Eno",
+      "line": "",
+      "born": "1948-05-15",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Albert Camus",
+      "line": "",
+      "born": "1913-11-07",
+      "passed": "1960-01-04",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Wu-Tang Clan",
+      "line": "",
+      "born": "1993-11-09",
+      "passed": "2015-11-25",
+      "group": true,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "David Axelrod",
+      "line": "",
+      "born": "1931-04-17",
+      "passed": "2017-02-05",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "DJ Shadow",
+      "line": "",
+      "born": "1972-06-29",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Bill Laswell",
+      "line": "",
+      "born": "1955-02-12",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Elizabeth Fraser",
+      "line": "",
+      "born": "1963-08-29",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Cocteau Twins",
+      "line": "",
+      "born": "1982-07-10",
+      "passed": "1996-04-15",
+      "group": true,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Harold Budd",
+      "line": "",
+      "born": "1936-05-24",
+      "passed": "2020-12-08",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Glenn Gould",
+      "line": "",
+      "born": "1932-09-25",
+      "passed": "1982-10-04",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Sensational",
+      "line": "",
+      "born": "1974-10-18",
+      "passed": "2026-08-11",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Syd Barrett",
+      "line": "",
+      "born": "1946-01-06",
+      "passed": "2006-07-07",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Ben Okri",
+      "line": "",
+      "born": "1959-03-15",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Boards of Canada",
+      "line": "",
+      "born": "1998-04-20",
+      "passed": "2026-05-29",
+      "group": true,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "2Pac",
+      "line": "",
+      "born": "1971-06-16",
+      "passed": "1996-09-13",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "The Notorious B.I.G.",
+      "line": "",
+      "born": "1972-05-21",
+      "passed": "1997-03-09",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "OutKast",
+      "line": "",
+      "born": "1994-04-26",
+      "passed": "2006-08-22",
+      "group": true,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Takeshi Kitano",
+      "line": "",
+      "born": "1947-01-18",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Silvio Rodríguez",
+      "line": "",
+      "born": "1946-11-29",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Radiohead",
+      "line": "",
+      "born": "1993-02-22",
+      "passed": "2016-05-08",
+      "group": true,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Jon Pertwee",
+      "line": "",
+      "born": "1919-07-07",
+      "passed": "1996-05-20",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Tom Baker",
+      "line": "",
+      "born": "1934-01-20",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "William Shatner",
+      "line": "",
+      "born": "1931-03-22",
+      "passed": "",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Leonard Nimoy",
+      "line": "",
+      "born": "1931-03-26",
+      "passed": "2015-02-27",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Charlie Chaplin",
+      "line": "",
+      "born": "1889-04-16",
+      "passed": "1977-12-25",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Groucho Marx",
+      "line": "",
+      "born": "1890-10-02",
+      "passed": "1977-08-19",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Chico Marx",
+      "line": "",
+      "born": "1887-03-22",
+      "passed": "1961-10-11",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Harpo Marx",
+      "line": "",
+      "born": "1888-11-23",
+      "passed": "1964-09-28",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    },
+    {
+      "name": "Stanley Kubrick",
+      "line": "",
+      "born": "1928-07-26",
+      "passed": "1999-03-07",
+      "group": false,
+      "bornNote": "",
+      "passedNote": "",
+      "hidden": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "label": "new",
+      "text": "the inspirations wall is up. drag to wander",
+      "link": "inspirations.html",
+      "start": "",
+      "end": "",
+      "hidden": false
+    },
+    {
+      "label": "listen",
+      "text": "albums, old and new, on bandcamp",
+      "link": "",
+      "start": "",
+      "end": "",
+      "hidden": false
+    }
+  ]
+}

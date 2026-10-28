@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "title": "hira art retreat building project",
+      "where": "in person · los angeles",
+      "description": "learn the methods of earth building (earth bag, rammed earth, lime plaster) and the intricate artistic flourishes yusuf adds to these ancient techniques, while helping to create an art studio and retreat space in los angeles.",
+      "payment": "trade",
+      "open": true,
+      "showInTicker": false,
+      "tickerText": ""
+    },
+    {
+      "title": "poetry deck",
+      "where": "remote · los angeles preferred · part-time",
+      "description": "help needed to develop a deck of poetry cards.",
+      "payment": "a percentage of sales, and credit",
+      "open": true,
+      "showInTicker": true,
+      "tickerText": "poetry deck: remote, part-time, paid in a share of sales"
+    },
+    {
+      "title": "podcast interviewees & co-hosts",
+      "where": "in person · occasionally remote",
+      "description": "[one line about the podcast]",
+      "payment": "[to be confirmed]",
+      "open": true,
+      "showInTicker": false,
+      "tickerText": ""
+    }
+  ]
+}

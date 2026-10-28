@@ -1,0 +1,96 @@
+{
+  "links": {
+    "bandcamp": "",
+    "instagram": "",
+    "contact": ""
+  },
+  "menu": [
+    {
+      "label": "bio",
+      "link": "",
+      "names": [
+        "bio / spirito",
+        "him",
+        "miyu",
+        "yumi",
+        "stellar cartography",
+        "khudum",
+        "أنا",
+        "madzoob",
+        "malang",
+        "organism",
+        "me beats",
+        "biologico situ",
+        "zindaman",
+        "atman / aadam"
+      ]
+    },
+    {
+      "label": "selected works",
+      "link": "works.html",
+      "names": [
+        "grand offerings",
+        "past presents",
+        "totalography",
+        "compendia forever"
+      ]
+    },
+    {
+      "label": "contact",
+      "link": "",
+      "names": [
+        "inroad circles",
+        "to humans",
+        "reachings",
+        "hither",
+        "alfalfa",
+        "dil-dil",
+        "uways",
+        "pleiades",
+        "parwana",
+        "dm"
+      ]
+    },
+    {
+      "label": "press",
+      "link": "",
+      "names": [
+        "onlookers",
+        "outpours",
+        "witnesses",
+        "proof",
+        "petroglyph"
+      ]
+    },
+    {
+      "label": "inspirations",
+      "link": "inspirations.html",
+      "names": [
+        "teachers",
+        "lamps",
+        "elders",
+        "echoes",
+        "light debt",
+        "دوستان عزیز",
+        "forebears",
+        "circles",
+        "made of",
+        "guides",
+        "استادان",
+        "giants",
+        "great ones"
+      ]
+    },
+    {
+      "label": "opportunities",
+      "link": "opportunities.html",
+      "names": [
+        "openitunities",
+        "invitations",
+        "callings",
+        "quantum entanglement",
+        "vivify"
+      ]
+    }
+  ]
+}

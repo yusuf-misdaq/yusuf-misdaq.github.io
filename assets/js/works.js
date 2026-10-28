@@ -85,7 +85,7 @@ ${(it.g_allah) ? html`
 </div>
 ` : null}
 <div style="margin-left: calc((100% - 340px) * ${it.f}); width: 340px; max-width: 100%">
-<a class="card" href="#" aria-label=${it.aria} style="--r: ${it.rot}deg; animation-delay: ${it.delay}ms">
+<a class="card" href=${it.href} aria-label=${it.aria} style="--r: ${it.rot}deg; animation-delay: ${it.delay}ms">
 ${(it.speck) ? html`
 <span class="fx" aria-hidden="true">
 ${(it.fk || []).map((f) => html`
@@ -205,7 +205,7 @@ class Component extends DCLogic {
     if (this._io) this._io.disconnect();
   }
   works() {
-    return (CONTENT.works || []).filter((w) => !w.hidden && w.title).map((w) => ({ t: w.title, cat: w.form || 'music', y: w.year ? +w.year : null, meta: w.details || '', line: w.line || '', cover: w.cover || '' }));
+    return (CONTENT.works || []).filter((w) => !w.hidden && w.title).map((w) => ({ t: w.title, cat: w.form || 'music', y: w.year ? +w.year : null, meta: (w.details || '').replace(/\s+[-–|]\s+/g, ' · '), line: w.line || '', cover: w.cover || '', href: w.slug ? 'work.html?w=' + encodeURIComponent(w.slug) : '#' }));
   }
   makeBase() {
     const V = {

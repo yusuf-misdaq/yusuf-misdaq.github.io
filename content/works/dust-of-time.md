@@ -1,10 +1,10 @@
 ---
 title: Dust of Time
 form: music
-year: '2019'
+year: "2019"
 details: ep & installation · glendale central library · 2019
-line: a three-part suite, installed with collage, poetry, chiffon, light and gemstones.
-cover: ''
+line: a three-part suite, installed with collage, poetry, chiffon, light and
+  gemstones.
+cover: media/images/a032318475710.jpg
 hidden: false
-blocks: []
 ---

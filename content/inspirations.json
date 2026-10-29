@@ -35,6 +35,14 @@
       "line": "a huge early influence who continually reinvented and innovated his sound and collaborated beautifully and widely",
       "size": "small",
       "hidden": false
+    },
+    {
+      "name": "Miles Davis",
+      "image": "media/images/detailed-grayscale-open-palm-cutout.png",
+      "description": "musician, artist",
+      "line": "huge influence in my 20's, live evil, bitches brew, in a silent way, read his autobiography",
+      "size": "large",
+      "hidden": false
     }
   ]
 }

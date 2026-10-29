@@ -124,7 +124,7 @@ class Work extends Component {
             ${work.details ? html`<p class="wk-meta">${work.details.replace(/\s+[-\u2013|]\s+/g, ' \u00b7 ')}</p>` : null}
             ${work.line ? html`<p class="wk-line">${work.line}</p>` : null}
           </div>
-          ${hasCover ? html`<img class="wk-cover above" src=${work.cover} alt=${work.title + ' cover'} />` : null}
+          ${hasCover ? html`<img class="wk-cover above" src=${work.cover} alt=${work.title + ' cover'} style=${'--tilt: ' + TILT + 'deg'} />` : null}
         </section>
         <a class="wk-back" href="works.html">← all selected works</a>
         <div class="blocks">${(work.blocks || []).map((b, i) => html`<${Block} b=${b} i=${i} />`)}</div>
@@ -139,6 +139,8 @@ class Work extends Component {
 }
 
 const slug = new URLSearchParams(location.search).get('w') || '';
+// a new gentle tilt for the cover on every visit
+const TILT = ((Math.random() < 0.5 ? -1 : 1) * (0.6 + Math.random() * 1.9)).toFixed(2);
 await loadContent(['settings', 'works']);
 let work = null;
 try {

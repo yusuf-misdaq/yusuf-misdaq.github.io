@@ -31,3 +31,15 @@ export function pageProps(defaults) {
 
 // phone layouts for the music/news strip can be compared from the address bar: ?strip=top or ?strip=end
 try { const st = new URLSearchParams(location.search).get('strip'); if (st) document.documentElement.dataset.strip = st; } catch (e) {}
+
+// iPhone Safari (iOS 26) tints its floating bottom toolbar from a fixed bar touching the bottom edge.
+// on phones, an almost-hidden indigo bar there makes the toolbar match the footer instead of showing cream.
+try {
+  if (window.matchMedia('(hover: none) and (max-width: 760px)').matches) {
+    const t = document.createElement('div');
+    t.id = 'toolbar-tint';
+    t.setAttribute('aria-hidden', 'true');
+    t.style.cssText = 'position:fixed;left:0;right:0;bottom:-8px;height:12px;background:#1E2B55;pointer-events:none;z-index:1';
+    (document.body || document.documentElement).appendChild(t);
+  }
+} catch (e) {}

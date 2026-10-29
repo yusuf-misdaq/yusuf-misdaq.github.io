@@ -111,11 +111,12 @@ html{background:#F4EBD6}
 @media (max-width: 760px){.namelink{min-height:0;padding:40px 20px 34px}}
 .foot{padding-bottom:calc(110px + env(safe-area-inset-bottom)) !important}
 @media (max-width: 760px){
-.foot{padding-bottom:calc(190px + env(safe-area-inset-bottom)) !important}
-html[data-strip="top"] .strip{top:0;bottom:auto;height:calc(44px + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);padding-bottom:0;box-shadow:0 1px 0 var(--sline)}
-html[data-strip="top"] body{padding-top:calc(44px + env(safe-area-inset-top))}
-html[data-strip="top"] .foot,html[data-strip="end"] .foot{padding-bottom:calc(36px + env(safe-area-inset-bottom)) !important}
-html[data-strip="end"] .strip{position:relative;height:auto;min-height:44px;padding-bottom:env(safe-area-inset-bottom)}
+/* phones: Safari's floating toolbar owns the bottom of the screen, so the strip joins the page instead of floating:
+   it sits directly under the name banner, the same slim band as on desktop */
+#app > div > *{order:2}
+#app > div > .namelink{order:0}
+#app > div > .strip{order:1;position:relative;bottom:auto;left:auto;right:auto;z-index:2}
+.foot{padding-bottom:calc(36px + env(safe-area-inset-bottom)) !important}
 }
 </style>
 </head>

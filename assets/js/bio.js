@@ -25,7 +25,7 @@ class Wheel extends Component {
         const t = Math.min(1, (ts - this.spin.t0) / this.spin.dur);
         const e = 1 - Math.pow(1 - t, 3);
         this.angle = this.spin.from + (this.spin.to - this.spin.from) * e;
-        if (t >= 1) this.spin = null;
+        if (t >= 1) { this.spin = null; if (this.props.onLanded) this.props.onLanded(); }
       } else if (!this.props.settled && !this.hover && !this.reduce) {
         this.angle = (this.angle + IDLE_SPEED * dt) % 360;
       }
@@ -49,7 +49,7 @@ class Wheel extends Component {
     const from = this.angle;
     let to = target;
     while (to < from + (instant ? 0 : 300)) to += 360;
-    if (instant || this.reduce) { this.angle = to % 360; this.apply(); return; }
+    if (instant || this.reduce) { this.angle = to % 360; this.apply(); if (!instant && this.props.onLanded) this.props.onLanded(); return; }
     this.spin = { from, to, t0: performance.now(), dur: 1500 };
   }
   render({ items, selected, onPick }) {
@@ -83,7 +83,14 @@ class Bio extends Component {
   }
   pick(k) {
     this.setState({ sel: k });
-    try { history.replaceState(null, '', '#' + slug(this.props.items[k].name)); } catch (e) {}
+  }
+  landed() {
+    const el = this.article;
+    if (!el) return;
+    let reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    const top = el.getBoundingClientRect().top + window.scrollY - 40;
+    window.scrollTo({ top: Math.max(0, top), behavior: reduce ? 'auto' : 'smooth' });
   }
   render({ items }) {
     const sel = this.state.sel;
@@ -92,8 +99,8 @@ class Bio extends Component {
       <${Header} here="bio" />
       <main class="bio">
         <p class="bhint">${sel == null ? 'choose a bio' : 'bio · ' + show.name.toLowerCase()}</p>
-        <${Wheel} items=${items} selected=${sel} settled=${sel != null} onPick=${(k) => this.pick(k)} />
-        <article class="btext" key=${sel == null ? 0 : sel}>
+        <${Wheel} items=${items} selected=${sel} settled=${sel != null} onPick=${(k) => this.pick(k)} onLanded=${() => this.landed()} />
+        <article class="btext" key=${sel == null ? 0 : sel} ref=${(el) => { this.article = el; }}>
           ${show.text && show.text.replace(/<[^>]*>/g, '').trim()
             ? html`<div class="prose" dangerouslySetInnerHTML=${{ __html: show.text }}></div>`
             : html`<p class="bsoon">this version is still being written.</p>`}

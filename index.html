@@ -112,10 +112,11 @@ html{background:#F4EBD6}
 .foot{padding-bottom:calc(110px + env(safe-area-inset-bottom)) !important}
 @media (max-width: 760px){
 /* phones: Safari's floating toolbar owns the bottom of the screen, so the strip joins the page instead of floating:
-   it sits directly under the name banner, the same slim band as on desktop */
-#app > div > *{order:2}
+   it sits directly above the footer, the same slim band as on desktop */
+#app > div > *{order:1}
 #app > div > .namelink{order:0}
-#app > div > .strip{order:1;position:relative;bottom:auto;left:auto;right:auto;z-index:2}
+#app > div > .strip{order:2;position:relative;bottom:auto;left:auto;right:auto;z-index:2;margin-top:110px}
+#app > div > .foot{order:3;margin-top:0 !important}
 .foot{padding-bottom:calc(36px + env(safe-area-inset-bottom)) !important}
 }
 </style>

@@ -12,10 +12,12 @@ blocks:
   - type: split
     left:
       image: media/images/a159664451610.jpg
+      focus: center
       title: SHEDARK
       line: it was rough
     right:
       image: media/images/a411725018310.jpg
+      focus: center
       title: MIROSA
       line: "it will be okay "
   - type: credits
@@ -28,4 +30,14 @@ blocks:
       Cover photograph taken by Ahmad Bromund
 
       Cover design: Jawharat al-Kamal
+  - type: poster
+    text: |
+      I wanna see if you're serious 
+      Just want to see you if you're serious 
+      Yes, wanna be with you for these periods 
+      Yes, wanna stare into your myriads 
+      Yes-You and your beautiful silhouette, 
+      Yes, put you inside my warm pyramid 
+      Gave you the key so get rid of it
+    tight: false
 ---

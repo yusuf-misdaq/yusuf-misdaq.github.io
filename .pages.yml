@@ -183,15 +183,27 @@ content:
           - name: split
             label: Split (two halves side by side)
             fields:
-              - name: style
-                label: Panels
+              - name: panel
+                label: Panel colour
                 type: select
-                options: { values: [plain, lapis] }
+                options: { values: [cream, ink, gold, lapis, pink] }
+              - name: text
+                label: Text colour
+                type: select
+                options: { values: [indigo, gold, cream, pink] }
+              - name: shape
+                label: "Image shape (both halves are cropped to match)"
+                type: select
+                options: { values: [square, portrait, landscape, whole] }
               - name: left
                 label: Left half
                 type: object
                 fields:
                   - { name: image, label: Image, type: image, options: { path: media/images } }
+                  - name: focus
+                    label: Keep this part when cropped
+                    type: select
+                    options: { values: [center, top, bottom, left, right] }
                   - { name: title, label: Title, type: string }
                   - { name: line, label: Line, type: string }
                   - { name: link, label: "Link (a page like work.html?w=narayan, or a web address)", type: string }
@@ -201,6 +213,10 @@ content:
                 type: object
                 fields:
                   - { name: image, label: Image, type: image, options: { path: media/images } }
+                  - name: focus
+                    label: Keep this part when cropped
+                    type: select
+                    options: { values: [center, top, bottom, left, right] }
                   - { name: title, label: Title, type: string }
                   - { name: line, label: Line, type: string }
                   - { name: link, label: Link, type: string }

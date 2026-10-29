@@ -64,12 +64,19 @@ function Block({ b, i }) {
       </div>`;
     }
     case 'split': {
-      const half = (h) => {
+      // panel: cream | ink | gold | lapis | pink ; text: indigo | gold | cream | pink ; image shape: square | portrait | landscape | whole
+      const panel = b.panel || (b.style === 'lapis' ? 'lapis' : 'cream');
+      const text = b.text || (panel === 'ink' || panel === 'lapis' ? 'cream' : 'indigo');
+      const shape = b.shape || 'square';
+      const half = (h, side) => {
         if (!h) return html`<div></div>`;
-        const inner = html`${h.image ? html`<img src=${h.image} alt=${h.title || ''} loading="lazy" />` : null}<h3>${h.title}</h3>${h.line ? html`<p>${h.line}</p>` : null}${h.link ? html`<span class="go">${h.linkText || 'more'} →</span>` : null}`;
-        return h.link ? html`<a class="half" href=${h.link}>${inner}</a>` : html`<div class="half">${inner}</div>`;
+        const inner = html`${panel === 'lapis' ? html`<${Flecks} list=${cachedFlecks('split' + i + side, 0.9)} />` : null}
+          ${h.image ? html`<img class=${'above s-' + shape} src=${h.image} alt=${h.title || ''} loading="lazy" style=${'object-position: ' + (focus[h.focus] || 'center')} />` : null}
+          <h3 class="above">${h.title}</h3>${h.line ? html`<p class="above">${h.line}</p>` : null}${h.link ? html`<span class="go above">${h.linkText || 'more'} →</span>` : null}`;
+        const cls = 'half p-' + panel + ' t-' + text;
+        return h.link ? html`<a class=${cls} href=${h.link}>${inner}</a>` : html`<div class=${cls}>${inner}</div>`;
       };
-      return html`<div class=${'w-wide split' + (b.style === 'lapis' ? ' lapis-halves' : '') + tight}>${half(b.left)}${half(b.right)}</div>`;
+      return html`<div class=${'w-wide split' + tight}>${half(b.left, 'l')}${half(b.right, 'r')}</div>`;
     }
     case 'quote':
       return html`<figure class=${(b.style === 'poster' ? 'w-wide q-poster' : 'w-text q-quiet') + tight}><p>${b.text}</p>${b.by ? html`<figcaption class="q-by">— ${b.by}</figcaption>` : null}</figure>`;

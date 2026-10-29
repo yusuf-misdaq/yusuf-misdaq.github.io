@@ -20,6 +20,18 @@ blocks:
       focus: center
       title: MIROSA
       line: "it will be okay "
+  - type: poster
+    text: |
+      I wanna see if ur serious 
+      Just want to see you if you're serious 
+      Yes, wanna be with you for these periods 
+      Yes, wanna stare into your myriads 
+      Yes-You and your beautiful silhouette, 
+      Yes, put you inside my warm pyramid 
+      Gave you the key so get rid of it
+    colour: pink
+    size: medium
+    tight: false
   - type: credits
     text: >-
       Written, Produced & Performed by Yusuf 'Yoshi' Misdaq at Nefisa Studios,
@@ -30,14 +42,4 @@ blocks:
       Cover photograph taken by Ahmad Bromund
 
       Cover design: Jawharat al-Kamal
-  - type: poster
-    text: |
-      I wanna see if you're serious 
-      Just want to see you if you're serious 
-      Yes, wanna be with you for these periods 
-      Yes, wanna stare into your myriads 
-      Yes-You and your beautiful silhouette, 
-      Yes, put you inside my warm pyramid 
-      Gave you the key so get rid of it
-    tight: false
 ---

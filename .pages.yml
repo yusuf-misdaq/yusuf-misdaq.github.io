@@ -372,6 +372,24 @@ content:
               - { name: title, label: "Title as shown in the player, e.g. song · album", type: string }
               - { name: file, label: "Audio file (mp3, about 3–6 MB)", type: file, options: { path: media/audio, extensions: [mp3, m4a, ogg] } }
 
+  - name: bio
+    label: Bio
+    type: file
+    path: content/bio.json
+    format: json
+    fields:
+      - name: items
+        label: "Bio versions (in wheel order: the first one shows when the page opens)"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.name}"
+        fields:
+          - { name: name, label: "Name on the wheel, e.g. Main, Birds", type: string, required: true }
+          - { name: text, label: Bio text, type: rich-text, options: { format: html, path: media/images } }
+          - { name: hidden, label: Hide this version, type: boolean }
+
   - name: settings
     label: Site settings
     type: file

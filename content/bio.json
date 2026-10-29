@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "Main",
+      "text": "<p>Yusuf Yoshi Misdaq is a novelist, poet, musician &amp; visual artist. He is Afghan (born &amp; raised in Brighton, UK, and presently living and working in the USA). Through an experimental, abstract style, Misdaq’s work across genres harmoniously blends psychological / spiritual self-examination, a regeneration of world traditions, and keen observations of contemporary society. His furious output, energy &amp; productivity are sparked by passionate love for each of his respective art-forms &amp; dedicated, organized practice.</p>",
+      "hidden": false
+    },
+    {
+      "name": "Music",
+      "text": "",
+      "hidden": false
+    },
+    {
+      "name": "Writing",
+      "text": "",
+      "hidden": false
+    },
+    {
+      "name": "Visual Art",
+      "text": "",
+      "hidden": false
+    },
+    {
+      "name": "Pretentious",
+      "text": "",
+      "hidden": false
+    },
+    {
+      "name": "Birds",
+      "text": "",
+      "hidden": false
+    }
+  ]
+}

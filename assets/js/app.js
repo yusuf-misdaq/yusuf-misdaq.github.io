@@ -71,7 +71,12 @@ document.addEventListener('click', (e) => {
   const a = e.target.closest && e.target.closest('a[href]');
   if (!a || (a.target && a.target !== '_self') || a.hasAttribute('download')) return;
   const url = new URL(a.getAttribute('href'), location.href);
-  if (!routeOf(url)) return;
+  // house rule: anything that isn't one of the site's own pages opens in a new tab, so the music keeps playing.
+  // (email and phone links are left alone; add data-same-tab to a link to opt out.)
+  if (!routeOf(url)) {
+    if (/^https?:$/.test(url.protocol) && !a.hasAttribute('data-same-tab')) { a.target = '_blank'; a.rel = 'noopener'; }
+    return;
+  }
   // a link to a spot on this same page keeps its usual behaviour
   if (url.pathname === location.pathname && url.search === location.search && url.hash) return;
   e.preventDefault();

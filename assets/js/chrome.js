@@ -86,7 +86,7 @@ export class Header extends Component {
       <nav class="menu" aria-label="main" onMouseEnter=${() => { this._hold = true; }} onMouseLeave=${() => { this._hold = false; }}>
         ${defs.map((d, k) => { const name = d.names[this.state.mi[k] % d.names.length]; return html`
           <a href=${d.href} class="mi" aria-current=${d.gen === here ? 'page' : 'false'} aria-label=${name + ' (' + d.gen + ')'}>
-            <span class="mbox"><${Flecks} list=${cachedFlecks('menu' + k, 0.55)} /><span class=${'poe sw' + this.state.mf[k]}>${name}</span></span>
+            <span class="mbox"><${Flecks} list=${cachedFlecks('menu' + k, 0.55)} /><span class=${'poe sw' + this.state.mf[k]}>${name}</span><span class="real" aria-hidden="true">${d.gen}</span></span>
             <span class="gen" aria-hidden="true">${d.gen}</span>
           </a>`; })}
       </nav>

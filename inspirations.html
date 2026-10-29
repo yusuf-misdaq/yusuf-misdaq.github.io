@@ -66,6 +66,19 @@ a{color:#1E2B55}a:hover{color:#2E4A8C}
 .fcall{font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-size:27px;letter-spacing:-0.03em;color:#D6B25E;text-transform:lowercase;text-align:center;margin:0}
 .flinks{display:flex;flex-wrap:wrap;gap:6px 22px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:-0.07em;text-transform:lowercase}
 .flinks a{color:#E3C47E;text-underline-offset:4px}.flinks a:hover{color:#F4EBD6}
+/* menu: on hover the box turns gold and shows its plain name inside (computers); phones keep the name underneath */
+.mbox{transition:background-color .35s ease}
+.mbox .fx{transition:opacity .35s ease}
+.poe{transition:opacity .3s ease}
+.real{position:absolute;top:0;right:0;bottom:0;left:0;display:flex;align-items:center;justify-content:center;padding:0 10px;font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:900;font-size:17px;line-height:1;letter-spacing:-0.04em;color:#1E2B55;text-transform:lowercase;text-align:center;opacity:0;transition:opacity .35s ease;z-index:2;pointer-events:none}
+@media (hover: hover){
+.gen{display:none}
+.mi:hover .mbox,.mi:focus-visible .mbox{background:#D6B25E}
+.mi:hover .mbox .fx,.mi:focus-visible .mbox .fx{opacity:0}
+.mi:hover .poe,.mi:focus-visible .poe{opacity:0 !important}
+.mi:hover .real,.mi:focus-visible .real{opacity:1}
+}
+@media (hover: none){.real{display:none}}
 </style>
 </head>
 <body>

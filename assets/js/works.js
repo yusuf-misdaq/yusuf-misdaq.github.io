@@ -16,7 +16,7 @@ function tpl(v) {
 <a href="index.html" class="namebox inter" aria-label="yusuf misdaq, home">yusuf<br />misdaq</a>
 <nav class="menu" aria-label="main" onMouseEnter=${v.holdOn} onMouseLeave=${v.holdOff}>
 ${(v.menu || []).map((m) => html`
-<a href=${m.href} class="mi" aria-current=${m.current} aria-label=${m.aria}><span class="mbox"><span class="fx" aria-hidden="true">${(m.fk || []).map((f) => html`<i class="fk" style="left: ${f.x}%; top: ${f.y}%; width: ${f.w}px; height: ${f.h}px; transform: translate(-50%, -50%) rotate(${f.r}deg); opacity: ${f.o}; background: ${f.c}; border-radius: ${f.br}; filter: blur(${f.b}px)"></i>`)}</span><span class="poe ${m.sw}">${m.name}</span></span><span class="gen" aria-hidden="true">${m.gen}</span></a>
+<a href=${m.href} class="mi" aria-current=${m.current} aria-label=${m.aria}><span class="mbox"><span class="fx" aria-hidden="true">${(m.fk || []).map((f) => html`<i class="fk" style="left: ${f.x}%; top: ${f.y}%; width: ${f.w}px; height: ${f.h}px; transform: translate(-50%, -50%) rotate(${f.r}deg); opacity: ${f.o}; background: ${f.c}; border-radius: ${f.br}; filter: blur(${f.b}px)"></i>`)}</span><span class="poe ${m.sw}">${m.name}</span><span class="real" aria-hidden="true">${m.gen}</span></span><span class="gen" aria-hidden="true">${m.gen}</span></a>
 `)}
 </nav>
 </header>

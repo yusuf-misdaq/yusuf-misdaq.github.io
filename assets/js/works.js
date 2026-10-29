@@ -85,7 +85,7 @@ ${(it.g_allah) ? html`
 </div>
 ` : null}
 <div style="margin-left: calc((100% - 340px) * ${it.f}); width: 340px; max-width: 100%">
-<a class="card" href=${it.href} aria-label=${it.aria} style="--r: ${it.rot}deg; animation-delay: ${it.delay}ms">
+<a class="card" href=${it.href} aria-label=${it.aria} style="--r: ${it.rot}deg; animation-delay: ${it.delay}ms">${(it.hasImg) ? html`<span class="cimg" aria-hidden="true" style="background-image: ${it.coverCss}; transform-origin: ${it.org}; transform: ${it.tf}; --o: ${it.op}; --oh: ${it.oph}"></span>` : null}
 ${(it.speck) ? html`
 <span class="fx" aria-hidden="true">
 ${(it.fk || []).map((f) => html`
@@ -96,7 +96,6 @@ ${(it.fk || []).map((f) => html`
 <span class="ct above">${it.t}</span>
 <span class="cm above">${it.meta}</span>
 <span class="cl above">${it.line}</span>
-<span class="peek ${it.side}" aria-hidden="true"><span class="thing v-${it.v} ${it.cov}" style="--cover: ${it.coverCss}; --tint: ${it.tint}; --bg: ${it.bg}; --bpos: ${it.bpos}; --bsize: ${it.bsize}; --sz: ${it.sz}px; --cf: ${it.cf}deg; --keep: ${it.keep}%; transform: rotate(${it.prot}deg)"><span class="lbl">${it.t}</span></span></span>
 </a>
 </div>
 </div>
@@ -233,7 +232,12 @@ class Component extends DCLogic {
         keep: (53 + Math.random() * 46).toFixed(1),
         bpos: Math.round(15 + Math.random() * 70) + '% ' + Math.round(15 + Math.random() * 70) + '%',
         bsize: Math.round(260 + Math.random() * 140) + '%',
-        aria: w.t + ', ' + w.meta
+        aria: w.t + ', ' + w.meta,
+        hasImg: !!w.cover,
+        org: Math.round(20 + Math.random() * 60) + '% ' + Math.round(20 + Math.random() * 60) + '%',
+        tf: 'scale(' + (1.25 + Math.random() * 1.35).toFixed(2) + ')' + (Math.random() < 0.3 ? ' scaleX(-1)' : ''),
+        op: (0.07 + Math.random() * 0.06).toFixed(3),
+        oph: '0.78'
       });
     });
     for (let i = list.length - 1; i > 0; i--) {

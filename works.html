@@ -176,6 +176,11 @@ a{color:#1E2B55}a:hover{color:#2E4A8C}
 .fcall{font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-size:27px;letter-spacing:-0.03em;color:#D6B25E;text-transform:lowercase;text-align:center;margin:0}
 .flinks{display:flex;flex-wrap:wrap;gap:6px 22px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:-0.07em;text-transform:lowercase}
 .flinks a{color:#E3C47E;text-underline-offset:4px}.flinks a:hover{color:#F4EBD6}
+.card{overflow:hidden}
+.cimg{position:absolute;top:0;right:0;bottom:0;left:0;background-size:cover;background-repeat:no-repeat;background-position:center;opacity:var(--o);transition:opacity .45s ease;pointer-events:none}
+.card:hover .cimg,.card:focus-visible .cimg{opacity:var(--oh)}
+.cimg::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(100deg,rgba(30,43,85,.62) 0%,rgba(30,43,85,.38) 55%,rgba(30,43,85,.18) 100%)}
+.card:hover .ct,.card:hover .cm,.card:hover .cl,.card:focus-visible .ct,.card:focus-visible .cm,.card:focus-visible .cl{text-shadow:0 1px 10px rgba(14,20,48,.9),0 0 2px rgba(14,20,48,.8)}
 </style>
 </head>
 <body>

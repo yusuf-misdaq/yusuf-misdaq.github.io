@@ -1,0 +1,67 @@
+/* the shell around every page: base colours, the music/news strip and the footer. pages bring their own styles. */
+html{background:#1E2B55}
+body{margin:0;background:#F4EBD6}
+a{color:#1E2B55}a:hover{color:#2E4A8C}
+#shell{min-height:100vh;display:flex;flex-direction:column;background:#F4EBD6}
+#app{flex:1 0 auto;display:flex;flex-direction:column}
+#app > div{min-height:0 !important;flex:1 0 auto}
+.lapis{position:relative;overflow:hidden;background:#1E2B55}
+.fx{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none}
+.fk{position:absolute;display:block}
+.above{position:relative;z-index:1}
+
+/* footer */
+#foot{margin-top:80px}
+#foot .foot{margin:0 !important;border-radius:0;padding:44px 44px calc(100px + env(safe-area-inset-bottom)) !important;color:#F4EBD6;display:flex;flex-direction:column;gap:30px}
+.fcall{font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:800;font-size:27px;letter-spacing:-0.03em;color:#D6B25E;text-transform:lowercase;text-align:center;margin:0}
+.flinks{display:flex;flex-wrap:wrap;gap:6px 22px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:-0.07em;text-transform:lowercase}
+.flinks a{color:#E3C47E;text-underline-offset:4px}.flinks a:hover{color:#F4EBD6}
+
+/* the strip: fixed along the bottom on computers */
+#strip .strip{position:fixed;left:0;right:0;bottom:0;z-index:50;height:44px;display:flex;align-items:center;background:var(--sbg);color:var(--sfg);box-shadow:0 -1px 0 var(--sline)}
+#strip .s-lapis{--sbg:#1E2B55;--sfg:#F4EBD6;--slab:#D6B25E;--sacc:#D6B25E;--sline:rgba(214,178,94,.35);--spill:#1E2B55}
+#strip .s-red{--sbg:#9E2A22;--sfg:#F4EBD6;--slab:#EED39A;--sacc:#EED39A;--sline:rgba(30,43,85,.5);--spill:#9E2A22}
+#strip .s-gold{--sbg:#D6B25E;--sfg:#1E2B55;--slab:#1E2B55;--sacc:#1E2B55;--sline:rgba(30,43,85,.45);--spill:#D6B25E}
+#strip .s-pink{--sbg:#DDA0B4;--sfg:#1E2B55;--slab:#1E2B55;--sacc:#1E2B55;--sline:rgba(30,43,85,.4);--spill:#DDA0B4;--sbar:#1E2B55}
+#strip .s-lapis,#strip .s-red{--sbar:#D6B25E}#strip .s-gold{--sbar:#1E2B55}
+#strip .s-gold .fx{display:none}
+#strip .s-red .fk{opacity:.55 !important}
+#strip .player{flex:0 0 auto;width:clamp(200px,14%,260px);border-right:3px solid var(--sbar);display:flex;align-items:center;gap:10px;padding:0 10px 0 12px;box-sizing:border-box;height:100%}
+#strip .pp{flex:0 0 auto;width:32px;height:32px;border:1.5px solid var(--sacc);border-radius:50%;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;color:var(--sacc)}
+#strip .pp:hover,#strip .pp:focus-visible{background:rgba(255,255,255,.12);outline:none}
+#strip .pp svg{display:block}
+#strip .pmeta{min-width:0;flex:1 1 auto;display:flex;flex-direction:column;gap:5px}
+#strip .song{display:block;width:100%;overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent)}
+#strip .songin{display:inline-block;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:-0.07em;color:var(--slab);text-transform:lowercase;line-height:1.1;will-change:transform}
+#strip .songin i{font-style:normal;padding:0 14px}
+#strip .songin b{font-weight:inherit}
+#strip .songin[data-short] .dup{display:none}
+#strip .song{max-width:110px}
+#strip .vol{-webkit-appearance:none;appearance:none;width:100%;height:14px;margin:0;background:transparent;cursor:pointer}
+#strip .vol::-webkit-slider-runnable-track{height:2px;background:var(--sacc);opacity:.8;border-radius:2px}
+#strip .vol::-moz-range-track{height:2px;background:var(--sacc);border-radius:2px}
+#strip .vol::-webkit-slider-thumb{-webkit-appearance:none;width:11px;height:11px;margin-top:-4.5px;border-radius:50%;background:var(--sacc);border:none}
+#strip .vol::-moz-range-thumb{width:11px;height:11px;border-radius:50%;background:var(--sacc);border:none}
+#strip .vol:focus-visible{outline:1px solid var(--sacc);outline-offset:2px}
+#strip .tick{flex:1 1 auto;min-width:0;height:100%;overflow:hidden;display:flex;align-items:center;cursor:default;-webkit-mask-image:linear-gradient(to right,transparent,#000 56px,#000 calc(100% - 22px),transparent);mask-image:linear-gradient(to right,transparent,#000 56px,#000 calc(100% - 22px),transparent)}
+#strip .track{display:flex;flex:0 0 auto;width:max-content;will-change:transform}
+#strip .ti{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;padding-right:20px;font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:800;letter-spacing:-0.03em}
+#strip .ti::after{content:"\2726";color:var(--sacc);font-size:10px;padding-left:11px}
+#strip .tl,#strip .tt{display:block;line-height:1}
+#strip .tl{font-weight:800;font-size:13px;color:var(--slab)}
+#strip .tt{font-size:13px;color:var(--sfg)}
+#strip a.tt{text-decoration:underline;text-decoration-thickness:1.5px;text-decoration-color:var(--sacc);text-underline-offset:4px}
+#strip a.tt:hover,#strip a.tt:focus-visible{opacity:.8;outline:none}
+#strip .tmoon .tl{font-size:15px;line-height:1}
+#strip .tday .tl{color:var(--spill);background:var(--slab);padding:3px 7px 4px;border-radius:2px}
+@media (max-width: 720px){#strip .player{width:auto;padding-right:6px;gap:8px}#strip .pmeta{width:84px;flex:0 0 84px}#strip .vol{display:none}}
+#strip .strip{background:transparent !important}
+#strip .strip::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:var(--sbg);z-index:-1}
+
+/* phones: Safari's floating toolbar owns the bottom edge, so the strip sits in the page just above the footer */
+@media (max-width: 760px){
+#strip{margin-top:80px}
+#strip .strip{position:relative;left:auto;right:auto;bottom:auto;z-index:2}
+#foot{margin-top:0}
+#foot .foot{padding-bottom:calc(36px + env(safe-area-inset-bottom)) !important}
+}

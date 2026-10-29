@@ -2,7 +2,7 @@
 // content comes from content/bio.json (editor: "Bio"), in wheel order.
 import { html, render, Component } from './vendor/preact-htm.js';
 import { loadContent } from './site.js';
-import { Header, Footer, Flecks, cachedFlecks } from './chrome.js';
+import { Header, Flecks, cachedFlecks } from './chrome.js';
 
 const IDLE_SPEED = 4; // degrees per second while nobody has chosen yet
 const slug = (t) => String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -106,12 +106,15 @@ class Bio extends Component {
             : html`<p class="bsoon">this version is still being written.</p>`}
         </article>
       </main>
-      <${Footer} />
     </div>`;
   }
 }
 
-await loadContent(['settings', 'bio']);
-const items = (window.CONTENT.bio || []).filter((b) => b && b.name && !b.hidden);
-if (!items.length) items.push({ name: 'main', text: '' });
-render(html`<${Bio} items=${items} />`, document.getElementById('app'));
+export const files = ['settings', 'bio'];
+export async function mount(el) {
+  await loadContent(files);
+  const items = (window.CONTENT.bio || []).filter((b) => b && b.name && !b.hidden);
+  if (!items.length) items.push({ name: 'main', text: '' });
+  render(html`<${Bio} items=${items} />`, el);
+  return () => render(null, el);
+}

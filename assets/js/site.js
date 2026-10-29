@@ -3,6 +3,7 @@
 export async function loadContent(names) {
   const C = (window.CONTENT = window.CONTENT || {});
   await Promise.all(names.map(async (n) => {
+    if (n in C) return; // already loaded during this visit
     try {
       const r = await fetch('content/' + n + '.json', { cache: 'no-cache' });
       const d = r.ok ? await r.json() : null;

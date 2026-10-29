@@ -4,7 +4,7 @@ import { loadContent, pageProps } from './site.js';
 
 class DCLogic extends PreactComponent {
   constructor(p) { super(p); this.state = {}; }
-  render() { const v = Object.assign({ SITE: window.CONTENT, FOOT: window.FOOT_LINKS || {} }, this.renderVals()); return tpl(v); }
+  render() { const v = Object.assign({ SITE: window.CONTENT, FOOT: window.FOOT_LINKS || {} }, this.renderVals()); return (this.props.part === 'strip' ? tplStrip : tpl)(v); }
 }
 
 function tpl(v) {
@@ -46,12 +46,11 @@ ${(v.fk2 || []).map((f) => html`
 
 
 </div>
-<footer class="foot lapis">
-<span class="fx" aria-hidden="true">${(v.fk4 || []).map((f) => html`<i class="fk" style="left: ${f.x}%; top: ${f.y}%; width: ${f.w}px; height: ${f.h}px; transform: translate(-50%, -50%) rotate(${f.r}deg); opacity: ${f.o}; background: ${f.c}; border-radius: ${f.br}; filter: blur(${f.b}px)"></i>`)}</span>
-<p class="above fcall">.you are here for a reason.</p>
-<nav class="above flinks" aria-label="elsewhere" style="justify-content: center"><a href=${v.FOOT.bandcamp}>bandcamp</a><a href=${v.FOOT.instagram}>instagram</a><a href=${v.FOOT.contact}>contact</a></nav>
-</footer>
-<div class="strip lapis s-${v.stripColor}" role="region" aria-label="music and news">
+</div>
+`;
+}
+function tplStrip(v) {
+  return html`<div class="strip lapis s-${v.stripColor}" role="region" aria-label="music and news">
 <span class="fx" aria-hidden="true">${(v.fk5 || []).map((f) => html`<i class="fk" style="left: ${f.x}%; top: ${f.y}%; width: ${f.w}px; height: ${f.h}px; transform: translate(-50%, -50%) rotate(${f.r}deg); opacity: ${f.o}; background: ${f.c}; border-radius: ${f.br}; filter: blur(${f.b}px)"></i>`)}</span>
 <div class="player above">
 <button class="pp" type="button" onClick=${v.toggle} aria-label=${v.ppLabel}>
@@ -63,7 +62,6 @@ ${(v.paused) ? html`<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden=
 <div class="tick above" aria-label="news and anniversaries">
 <div class="track">
 ${(v.tix || []).map((t) => html`<span class="ti ${t.cls}"><b class="tl">${t.label}</b>${(t.link) ? html`<a class="tt" href=${t.href} target=${t.target} rel="noopener">${t.text}</a>` : null}${(t.plain) ? html`<span class="tt">${t.text}</span>` : null}</span>`)}
-</div>
 </div>
 </div>
 </div>
@@ -363,8 +361,9 @@ class Component extends DCLogic {
     this._mt = setInterval(setup, 1500); // catches font loading, resizes and re-renders
   }
   componentDidMount() {
-    this.startMotion();
-    this.scheduleTurn();
+    if (this.props.part !== 'page') this.startMotion();
+    if (this.props.part !== 'strip') this.scheduleTurn();
+    if (this.props.part === 'page') return;
     // browsers only allow sound after the visitor's first gesture: start on the first tap, click or key
     this._first = (ev) => {
       ['pointerdown', 'keydown'].forEach(t => document.removeEventListener(t, this._first, true));
@@ -405,6 +404,7 @@ class Component extends DCLogic {
   // each 459-day cycle walks through every excerpt once, in a fresh shuffled order per cycle.
   excerptOfDay() {
     const all = this.excerpts(), n = all.length;
+    if (!n) return ['', '', '', ''];
     const t = new Date(Date.now() - (3 * 60 + 33) * 60000);
     const START = Date.UTC(2026, 9, 27); // cycle 1 begins oct 27, 2026; move to launch day if wanted
     const day = Math.max(0, Math.round((Date.UTC(t.getFullYear(), t.getMonth(), t.getDate()) - START) / 864e5));
@@ -442,5 +442,16 @@ class Component extends DCLogic {
     };
   }
 }
-await loadContent(["excerpts", "people", "releases", "news", "moments", "opportunities", "songs", "settings"]);
-render(html`<${Component} ...${pageProps({"stripColor": "pink", "tickerDate": "today"})} />`, document.getElementById('app'));
+
+export const files = ["excerpts", "settings"];
+const defaults = {"stripColor": "pink", "tickerDate": "today"};
+export async function mount(el) {
+  await loadContent(files);
+  render(html`<${Component} ...${pageProps(defaults)} part="page" />`, el);
+  return () => render(null, el);
+}
+export const stripFiles = ["people", "releases", "news", "moments", "opportunities", "songs", "settings"];
+export async function mountStrip(el) {
+  await loadContent(stripFiles);
+  render(html`<${Component} ...${pageProps(defaults)} part="strip" />`, el);
+}

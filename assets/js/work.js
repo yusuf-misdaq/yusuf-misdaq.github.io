@@ -1,7 +1,7 @@
 // a single project page: work.html?w=<slug>. content comes from content/works/<slug>.json (written by the editor, prepared at publish time).
 import { html, render, Component } from './vendor/preact-htm.js';
 import { loadContent } from './site.js';
-import { Header, Footer, Flecks, cachedFlecks } from './chrome.js';
+import { Header, Flecks, cachedFlecks } from './chrome.js';
 
 const W = { text: 'w-text', wide: 'w-wide', full: 'w-full', band: 'w-full' };
 const width = (s, fallback) => W[s] || W[fallback] || 'w-text';
@@ -118,7 +118,7 @@ function Block({ b, i }) {
 class Work extends Component {
   render({ work, prev, next }) {
     if (!work) {
-      return html`<div class="page"><${Header} here="selected works" /><main class="wk"><p class="wk-missing">this work isn't here. <a href="works.html">back to selected works</a></p></main><${Footer} /></div>`;
+      return html`<div class="page"><${Header} here="selected works" /><main class="wk"><p class="wk-missing">this work isn't here. <a href="works.html">back to selected works</a></p></main></div>`;
     }
     const hasCover = !!work.cover && !work.hideCover;
     return html`<div class="page">
@@ -140,23 +140,28 @@ class Work extends Component {
           ${next ? html`<a href=${'work.html?w=' + encodeURIComponent(next.slug)} style="text-align: right">${next.title} →</a>` : null}
         </nav>
       </main>
-      <${Footer} />
+      
     </div>`;
   }
 }
 
-const slug = new URLSearchParams(location.search).get('w') || '';
-// a new gentle tilt for the cover on every visit
-const TILT = ((Math.random() < 0.5 ? -1 : 1) * (0.6 + Math.random() * 1.9)).toFixed(2);
-await loadContent(['settings', 'works']);
-let work = null;
-try {
-  const r = await fetch('content/works/' + encodeURIComponent(slug) + '.json', { cache: 'no-cache' });
-  if (r.ok) work = await r.json();
-} catch (e) {}
-if (work && work.hidden) work = null;
-// previous / next: newest first, matching "newest" on the selected works page
-const list = (window.CONTENT.works || []).slice().sort((a, b) => (+b.year || 0) - (+a.year || 0) || String(a.title).localeCompare(b.title));
-const at = list.findIndex((w) => w.slug === slug);
-if (work) document.title = work.title.toLowerCase() + ' · yusuf misdaq';
-render(html`<${Work} work=${work} prev=${at > 0 ? list[at - 1] : null} next=${at >= 0 && at < list.length - 1 ? list[at + 1] : null} />`, document.getElementById('app'));
+let TILT = 0;
+export const files = ['settings', 'works'];
+export async function mount(el) {
+  const slug = new URLSearchParams(location.search).get('w') || '';
+  // a new gentle tilt for the cover on every visit
+  TILT = ((Math.random() < 0.5 ? -1 : 1) * (0.6 + Math.random() * 1.9)).toFixed(2);
+  await loadContent(files);
+  let work = null;
+  try {
+    const r = await fetch('content/works/' + encodeURIComponent(slug) + '.json', { cache: 'no-cache' });
+    if (r.ok) work = await r.json();
+  } catch (e) {}
+  if (work && work.hidden) work = null;
+  // previous / next: newest first, matching "newest" on the selected works page
+  const list = (window.CONTENT.works || []).slice().sort((a, b) => (+b.year || 0) - (+a.year || 0) || String(a.title).localeCompare(b.title));
+  const at = list.findIndex((w) => w.slug === slug);
+  document.title = work ? work.title.toLowerCase() + ' · yusuf misdaq' : 'yusuf misdaq';
+  render(html`<${Work} work=${work} prev=${at > 0 ? list[at - 1] : null} next=${at >= 0 && at < list.length - 1 ? list[at + 1] : null} />`, el);
+  return () => render(null, el);
+}

@@ -4,7 +4,7 @@ import { loadContent, pageProps } from './site.js';
 
 class DCLogic extends PreactComponent {
   constructor(p) { super(p); this.state = {}; }
-  render() { const v = Object.assign({ SITE: window.CONTENT, FOOT: window.FOOT_LINKS || {} }, this.renderVals()); return tpl(v); }
+  render() { const v = Object.assign({ SITE: window.CONTENT, FOOT: window.FOOT_LINKS || {} }, this.renderVals()); return (this.props.part === 'strip' ? tplStrip : tpl)(v); }
 }
 
 function tpl(v) {
@@ -105,13 +105,11 @@ ${(it.fk || []).map((f) => html`
 <div style="height: 40px"></div>
 
 </div>
-<footer class="foot lapis">
-<span class="fx" aria-hidden="true">${(v.fkFoot || []).map((f) => html`<i class="fk" style="left: ${f.x}%; top: ${f.y}%; width: ${f.w}px; height: ${f.h}px; transform: translate(-50%, -50%) rotate(${f.r}deg); opacity: ${f.o}; background: ${f.c}; border-radius: ${f.br}; filter: blur(${f.b}px)"></i>`)}</span>
-<p class="above fcall">.you are here for a reason.</p>
-<nav class="above flinks" aria-label="elsewhere" style="justify-content: center"><a href=${v.FOOT.bandcamp}>bandcamp</a><a href=${v.FOOT.instagram}>instagram</a><a href=${v.FOOT.contact}>contact</a></nav>
-</footer>
 </div>
 `;
+}
+function tplStrip(v) {
+  return null;
 }
 class Component extends DCLogic {
   rng(seed) {
@@ -386,5 +384,11 @@ class Component extends DCLogic {
     };
   }
 }
-await loadContent(["works", "settings"]);
-render(html`<${Component} ...${pageProps({"ground": "#F4EBD6", "ink": "#1E2B55", "speckle": "medium", "cardSpeckle": true, "posterPhoto": "painting", "menuRotation": "slowly"})} />`, document.getElementById('app'));
+
+export const files = ["works", "settings"];
+const defaults = {"ground": "#F4EBD6", "ink": "#1E2B55", "speckle": "medium", "cardSpeckle": true, "posterPhoto": "painting", "menuRotation": "slowly"};
+export async function mount(el) {
+  await loadContent(files);
+  render(html`<${Component} ...${pageProps(defaults)} part="page" />`, el);
+  return () => render(null, el);
+}

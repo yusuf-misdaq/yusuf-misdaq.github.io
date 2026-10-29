@@ -371,7 +371,9 @@ class Component extends DCLogic {
       if (ev && ev.target && ev.target.closest && ev.target.closest('.player')) return;
       if (!(this.state && this.state.playing)) this.play();
     };
-    ['pointerdown', 'keydown'].forEach(t => document.addEventListener(t, this._first, true));
+    let touch = false;
+    try { touch = window.matchMedia('(hover: none), (max-width: 760px)').matches; } catch (e) {}
+    if (!touch) ['pointerdown', 'keydown'].forEach(t => document.addEventListener(t, this._first, true));
   }
   componentWillUnmount() {
     if (this._dayT) clearTimeout(this._dayT);

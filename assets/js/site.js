@@ -28,3 +28,6 @@ export function pageProps(defaults) {
   } catch (e) {}
   return p;
 }
+
+// phone layouts for the music/news strip can be compared from the address bar: ?strip=top or ?strip=end
+try { const st = new URLSearchParams(location.search).get('strip'); if (st) document.documentElement.dataset.strip = st; } catch (e) {}

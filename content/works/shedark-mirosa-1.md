@@ -23,11 +23,11 @@ blocks:
   - type: poster
     text: |
       I wanna see if ur serious 
-      Just want to see you if you're serious 
-      Yes, wanna be with you for these periods 
-      Yes, wanna stare into your myriads 
-      Yes-You and your beautiful silhouette, 
-      Yes, put you inside my warm pyramid 
+      Just want to see you if you're serious, 
+      Yes, wanna be with you for these periods, 
+      Yes, wanna stare into your myriads, 
+      Yes - You and your beautiful silhouette, 
+      Yes, put you inside my warm pyramid, 
       Gave you the key so get rid of it
     colour: pink
     size: medium

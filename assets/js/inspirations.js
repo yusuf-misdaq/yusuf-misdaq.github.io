@@ -19,11 +19,11 @@ ${(v.menu || []).map((m) => html`
 </nav>
 </header>
 <main style="flex: 1 1 auto; display: flex; flex-direction: column; padding: 0 0 60px">
-<div class="viewport" onPointerDown=${v.down} onPointerMove=${v.move} onPointerUp=${v.up} onPointerCancel=${v.up} aria-label="a wall of inspirations, drag to explore">
-<div class="wall" style="transform: translate(${v.ox}px, ${v.oy}px)">
+<div class="viewport" aria-label="a wall of inspirations: drag or use two fingers to move, pinch to zoom">
+<div class="wall">
 ${(v.pieces || []).map((p) => html`<figure class="piece" style="left: ${p.x}px; top: ${p.y}px; width: ${p.w}px; transform: rotate(${p.r}deg); z-index: ${p.z}" tabindex="0" aria-label=${p.aria}><img src=${p.image} alt=${p.name} draggable="false" /><figcaption class="pcard"><span class="pn">${p.name}</span><span class="pm2">${p.meta}</span>${(p.line) ? html`<span class="pl2">${p.line}</span>` : null}</figcaption></figure>`)}
 </div>
-<span class="hint">drag to wander</span>
+<span class="hint">drag · pinch to zoom</span>
 </div>
 </main>
 </div>
@@ -84,6 +84,7 @@ class Component extends DCLogic {
     return 'radial-gradient(circle at ' + cx + '% ' + cy + '%, #E3C47E 0 9%, transparent 32%), conic-gradient(from ' + deg + 'deg at 38% 62%, ' + tint + ', #2E4A8C, #E9DDBE, #3E5560, ' + tint + ')';
   }
   componentDidMount() {
+    import('./wall.js').then((m) => { if (this._gone) return; this._wall = m.attachWall(this.base && this.base.querySelector('.viewport')); });
     let reduce = false;
     try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
     if (reduce) return;
@@ -97,6 +98,8 @@ class Component extends DCLogic {
     }, 4200);
   }
   componentWillUnmount() {
+    this._gone = true;
+    if (this._wall) this._wall();
     if (this._t) clearInterval(this._t);
   }
   renderVals() {

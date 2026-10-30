@@ -367,12 +367,15 @@ class Component extends DCLogic {
     // browsers only allow sound after the visitor's first gesture: start on the first tap, click or key
     this._first = (ev) => {
       ['pointerdown', 'keydown'].forEach(t => document.removeEventListener(t, this._first, true));
+      try { sessionStorage.setItem('ym-music-started', '1'); } catch (e) {}
       if (ev && ev.target && ev.target.closest && ev.target.closest('.player')) return;
       if (!(this.state && this.state.playing)) this.play();
     };
     let touch = false;
     try { touch = window.matchMedia('(hover: none), (max-width: 760px)').matches; } catch (e) {}
-    if (!touch) ['pointerdown', 'keydown'].forEach(t => document.addEventListener(t, this._first, true));
+    let started = false;
+    try { started = !!sessionStorage.getItem('ym-music-started'); } catch (e) {}
+    if (!touch && !started) ['pointerdown', 'keydown'].forEach(t => document.addEventListener(t, this._first, true));
   }
   componentWillUnmount() {
     if (this._dayT) clearTimeout(this._dayT);

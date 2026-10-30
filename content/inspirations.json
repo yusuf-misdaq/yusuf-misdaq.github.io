@@ -43,6 +43,13 @@
       "line": "huge influence in my 20's, live evil, bitches brew, in a silent way, read his autobiography",
       "size": "large",
       "hidden": false
+    },
+    {
+      "name": "Nina Simone",
+      "image": "media/images/regal-woman-in-red-and-gold.png",
+      "line": "one of the first albums I ever got was her 'baltimore,' - my dad hated it for some reason, but I was intrigued, and there it all began",
+      "size": "small",
+      "hidden": false
     }
   ]
 }
